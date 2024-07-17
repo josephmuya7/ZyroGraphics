@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://josephmuya7.github.io/ZyroGraphicsWebsite.git-/sitemap.xml
