@@ -81,64 +81,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Generate a unique reference number
-    function generateReferenceNumber() {
-        return 'IMG-' + Math.random().toString(36).substr(2, 9).toUpperCase();
-    }
-
-    // Cloudinary Widget
-    var myWidget = cloudinary.createUploadWidget({
-        cloudName: 'dsluqynke', 
-        uploadPreset: 'ml_default',
-        apiKey: '827691554189241',
-        sources: ['local', 'url', 'camera'],
-        maxFiles: 1,
-        folder: 'images/client_uploads', // Specify a subfolder for client uploads
-        styles: {
-            palette: {
-                window: "#FFFFFF",
-                sourceBg: "#F4F4F5",
-                windowBorder: "#90A0B3",
-                tabIcon: "#0094C7",
-                inactiveTabIcon: "#69778A",
-                menuIcons: "#0094C7",
-                link: "#53AD9D",
-                action: "#8F5DA5",
-                inProgress: "#0194C7",
-                complete: "#53AD9D",
-                error: "#c43737",
-                textDark: "#000000",
-                textLight: "#FFFFFF"
-            }
-        },
-        clientAllowedFormats: ["png", "jpg", "jpeg", "gif"],
-        publicId: (filename) => {
-            const referenceNumber = generateReferenceNumber();
-            return `${referenceNumber}_${filename}`;
-        },
-        tags: ["client_upload"],
-        context: {
-            alt: "Client upload",
-            caption: "Awaiting processing"
-        }
-    }, (error, result) => { 
-        if (!error && result && result.event === "success") { 
-            console.log('Done! Here is the image info: ', result.info); 
-            const referenceNumber = result.info.public_id.split('/').pop().split('_')[0];
-            const imageUrl = result.info.secure_url;
-            
-            // Display success message with reference number
-            document.getElementById('upload-result').innerHTML = `
-                <p class="success-message">Image uploaded successfully!</p>
-                <p>Your reference number is: <strong>${referenceNumber}</strong></p>
-                <p>Please use this number when contacting us about your editing requirements.</p>
-            `;
-        }
-    });
-    
-    document.getElementById("upload_widget").addEventListener("click", function(){
-        myWidget.open();
-    }, false);
+   
 
     // Scroll to top when logo is clicked
     logo.addEventListener('click', () => {
