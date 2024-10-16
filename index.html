@@ -3,186 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Zyro Graphics offers expert image editing, photo retouching, graphic design services, and professional CV & resume writing services. Transform your visuals and career prospects with our professional skills and creative solutions.">
-    <meta name="keywords" content="image editing, photo retouching, Photoshop, graphic design, digital imaging, photo manipulation, color correction, image restoration, background removal, photo enhancement, CV writing, resume writing, LinkedIn optimization, cover letter writing, professional website creation">
-    <title>Zyro Graphics</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Zyro Graphics - Professional Digital Services</title>
+    <meta name="description" content="Zyro Graphics offers expert image editing, video editing, graphic design, and professional CV services. Transform your visuals and career prospects with our creative solutions.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png"  href="img/MyBrand2.png">
 </head>
 <body>
     <header>
-        <nav>
-            <div class="logo">
-                <img src="img/favicon.png" alt="Zyro Graphics Logo" class="logo-icon">
-            </div>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>            
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
+        <nav class="container">
+            <a href="#" class="logo">Zyro Graphics</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </nav>
     </header>
 
     <main>
         <section id="home" class="hero">
-            <div class="hero-slider">
-                <div class="hero-slide" style="background-image: url('img/Zyro\ Biz\ Card\ Front.png');"></div>
-                <div class="hero-slide" style="background-image: url('img/Zyro\ Biz\ Card\ Back.png');"></div>
-                <div class="hero-slide" style="background-image: url('img/GoldFields\ Card.png');"></div>
-                <div class="hero-slide" style="background-image: url('img/Brands\ and\ Trendy\ Fashion.png');"></div>
-                <div class="hero-slide" style="background-image: url('img/Akatsuki.png');"></div>
-                <div class="hero-slide" style="background-image: url('img/Haaland.png');"></div>
-            </div>
-            <div class="hero-content">
-                <h1>Welcome to Zyro Graphics Digital Services</h1>
-                <p>Professional digital solutions for all your needs</p>
-                <a href="#services" class="cta-button">Explore Services</a>
+            <div class="container">
+                <h1>Transform Your Vision with Zyro Graphics</h1>
+                <p>Professional digital solutions for all your creative needs</p>
+                <a href="#services" class="btn btn-primary">Explore Our Services</a>
             </div>
         </section>
 
         <section id="services" class="services">
-            <h2>Our Services</h2>
-            <div class="service-grid">
-                <div class="service-item">
-                    <i class="fas fa-photo-video"></i>
-                    <h3>Professional Photo Retouching</h3>
-                    <p>Transform your photos with expert retouching</p>
-                    <p>Starting at Ksh. 250</p>
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="service-grid">
+                    <div class="service-card">
+                        <i class="fas fa-photo-video"></i>
+                        <h3>Professional Photo Retouching</h3>
+                        <p>Transform your photos with expert retouching</p>
+                        <p class="price">Starting at Ksh. 250</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-film"></i>
+                        <h3>Cinematic Video Editing</h3>
+                        <p>Turn your footage into a compelling story</p>
+                        <p class="price">Starting at Ksh. 450</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-palette"></i>
+                        <h3>Graphic Design Services</h3>
+                        <p>Create stunning visuals for your brand</p>
+                        <p class="price">Starting at Ksh. 650</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Custom Software Solutions</h3>
+                        <p>Tailor-made software installation and configuration</p>
+                        <p class="price">Starting at Ksh. 500</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-file-alt"></i>
+                        <h3>CV & Resume Writing</h3>
+                        <p>Craft a CV that highlights your skills</p>
+                        <p class="price">Only Ksh. 200</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fab fa-linkedin"></i>
+                        <h3>LinkedIn Optimization</h3>
+                        <p>Enhance your profile to attract recruiters</p>
+                        <p class="price">Only Ksh. 200</p>
+                    </div>
                 </div>
-                <div class="service-item">
-                    <i class="fas fa-film"></i>
-                    <h3>Cinematic Video Editing</h3>
-                    <p>Turn your footage into a compelling story</p>
-                    <p>Starting at Ksh. 450</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-palette"></i>
-                    <h3>Graphic Design Services</h3>
-                    <p>Create stunning visuals for your brand</p>
-                    <p>Starting at Ksh.650</p>
-                </div>
-                <div class="service-item">
-                    
-                <div class="service-item">
-                    <i class="fas fa-laptop-code"></i>
-                    <h3>Custom Software Solutions</h3>
-                    <p>Tailor-made software installation and configuration</p>
-                    <p>Starting at Ksh. 500</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-cut"></i>
-                    <h3>Background Removal</h3>
-                    <p>Professional background removal for your images</p>
-                    <p>Starting at Ksh. 100 per image</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-file-alt"></i>
-                    <h3>CV & Resume Writing</h3>
-                    <p>Craft a CV and resume that highlights your skills</p>
-                    <p>Only Ksh. 200</p>
-                </div>
-                <div class="service-item">
-                    <i class="fab fa-linkedin"></i>
-                    <h3>LinkedIn Optimization</h3>
-                    <p>Enhance your LinkedIn profile to attract recruiters</p>
-                    <p>Only Ksh. 200</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-envelope-open-text"></i>
-                    <h3>Cover Letter Writing</h3>
-                    <p>Write a persuasive cover letter that grabs attention</p>
-                    <p>Only Ksh. 200</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-globe"></i>
-                    <h3>Professional Website Creation</h3>
-                    <p>Design a sleek website to showcase your portfolio</p>
-                    <p>Only Ksh. 300</p>
-                </div>
-            </div>
-            <div class="special-offer">
-                <h3>🌟 Special Offer!</h3>
-                <p>Request four services for only Ksh. 600!</p>
-                <p>This is your opportunity to invest in your career and make sure your documents and online presence shine like a diamond 💎.</p>
             </div>
         </section>
 
         <section id="about" class="about">
-            <h2>About Us</h2>
-            <p>Zyro Graphics Services is your one-stop solution for all your digital needs. With expertise in design, video editing, software installation, data management, and now professional CV and career services, we provide high-quality solutions at competitive prices.</p>
+            <div class="container">
+                <h2>About Us</h2>
+                <p>Zyro Graphics is your one-stop solution for all your digital needs. With expertise in design, editing, and career services, we provide high-quality solutions at competitive prices.</p>
+            </div>
         </section>
 
         <section id="contact" class="contact">
-            <h2>Get in Touch</h2>
-            <p class="section-description">Ready to transform your digital content or boost your career? Let's bring your vision to life!</p>
-            <div class="contact-container">
-                <form id="contact-form" action="https://formspree.io/f/movavawd" method="POST">
-                    <input type="hidden" name="_subject" value="New inquiry from Zyro Graphics website!">
-                    <input type="hidden" name="_captcha" value="true">
-                    <input type="hidden" name="_next" value="#contact">
-                    <input type="text" name="_honey" class="honeypot">
-                    
-                    <div class="form-group">
-                        <label for="name">Your Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="email">Your Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="service">Select a Service</label>
-                        <select id="service" name="service" required>
-                            <option value="">Choose a service</option>
-                            <option value="Photo Retouching">Professional Photo Retouching</option>
-                            <option value="Video Editing">Cinematic Video Editing</option>
-                            <option value="Graphic Design">Graphic Design Services</option>
-                            <option value="Gaming Setup">Ultimate Gaming Setup</option>
-                            <option value="Software Solutions">Custom Software Solutions</option>
-                            <option value="Background Removal">Background Removal</option>
-                            <option value="CV Writing">CV & Resume Writing</option>
-                            <option value="LinkedIn Optimization">LinkedIn Optimization</option>
-                            <option value="Cover Letter">Cover Letter Writing</option>
-                            <option value="Website Creation">Professional Website Creation</option>
-                            <option value="Special Offer">Special Offer Package</option>
-                            <option value="Other">Other (please specify in message)</option>
-                        </select>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="message">Your Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    
-                    <button type="submit" class="submit-btn">Send Message</button>
+            <div class="container">
+                <h2>Get in Touch</h2>
+                <form id="contact-form">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <select name="service" required>
+                        <option value="">Select a Service</option>
+                        <option value="Photo Retouching">Photo Retouching</option>
+                        <option value="Video Editing">Video Editing</option>
+                        <option value="Graphic Design">Graphic Design</option>
+                        <option value="Software Solutions">Software Solutions</option>
+                        <option value="CV Writing">CV Writing</option>
+                        <option value="LinkedIn Optimization">LinkedIn Optimization</option>
+                    </select>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
-                
-                <div class="contact-info">
-                    <h3>Contact Information</h3>
-                    <ul>
-                        <li><i class="fa-brands fa-facebook"></i> <a href="https://web.facebook.com/ZyroGraphics7" target="_blank" rel="noopener noreferrer">Zyro Graphics</a></li>
-                        <li><i class="fa-brands fa-square-whatsapp"></i> <a href="https://wa.link/mhwbxs">+254 705 730 780</a></li>
-                    </ul>
-                </div>
             </div>
-            <div id="form-message" class="form-message"></div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Zyro Graphics. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 Zyro Graphics. All rights reserved.</p>
+            <div class="social-links">
+                <ul>
+                    <li><i class="fa-brands fa-facebook"></i> <a href="https://web.facebook.com/ZyroGraphics7" target="_blank" rel="noopener noreferrer">Zyro Graphics</a></li>
+                    <li><i class="fa-brands fa-square-whatsapp"></i> <a href="https://wa.link/mhwbxs">+254 705 730 780</a></li>
+                </ul>  
+            </div>
+        </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
